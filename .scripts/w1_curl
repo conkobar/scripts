@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+curl -sI 3.88.184.247

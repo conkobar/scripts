@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+if [ -d ".mains" ]; then
+    mv .mains/*main.* .
+fi

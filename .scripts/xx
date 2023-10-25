@@ -1,0 +1,10 @@
+#!/usr/bin/bash
+if compgen -G "./*.py" > /dev/null; then
+    chmod u+x ./*.py
+fi
+if compgen -G "./*.sh" > /dev/null; then
+    chmod u+x ./*.sh
+fi
+if compgen -G "./*.js" > /dev/null; then
+    chmod u+x ./*.js
+fi

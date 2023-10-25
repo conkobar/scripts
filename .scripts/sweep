@@ -1,0 +1,18 @@
+#!/usr/bin/bash
+
+# make dir .mains if it doesnt exist
+[ ! -d ".mains" ] && mkdir ./.mains
+
+# make dir .utils if it doesnt exist
+[ ! -d ".utils" ] && mkdir ./.utils
+
+# if there are main files in cwd, move to .mains
+shopt -s nullglob
+for i in *main.*; do
+    mv "${i}" .mains
+done
+
+# if there are util files in cwd, move to .utils
+for i in *util.*; do
+    mv "${i}" .utils
+done

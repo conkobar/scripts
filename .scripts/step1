@@ -1,0 +1,12 @@
+#!/bin/bash
+#script to make a pretty README.md for school assignments
+
+#variables
+read -p "Project Name: " name
+read -p "Project Number: " numb
+read -p "Project URL: " purl
+read -p "Project Description: " desc
+read -p "Project Author: " auth
+read -p "Project Author's GitHub URL: " ghub
+
+printf "# [<center>$name - $numb</center>]($purl)\n ---\n ### <center>Description</center> \n ##### &emsp; $desc\n ---\n [<center>$auth</center>]($ghub)\n" > ./README.md

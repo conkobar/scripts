@@ -1,0 +1,3 @@
+#usr/bin/bash
+touch ./.clang-format
+cat ~/doxxx/claaaaaaang/.clang-format > ./.clang-format

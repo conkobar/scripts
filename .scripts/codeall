@@ -1,0 +1,13 @@
+#!/usr/bin/bash
+# takes a list of comma-separated paths and opens them in vscode
+
+# Get the comma-separated list of files from the first command-line argument
+files="$1"
+
+# Convert the comma-separated list into an array
+IFS=',' read -ra file_array <<<"$files"
+
+# Loop through the array and open each file
+for file in "${file_array[@]}"; do
+  code "$file"
+done
